@@ -1,0 +1,66 @@
+body {
+    background-image: url('img/snoopy.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
+    color: rgb(0, 217, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 50px;
+    animation: colorChange 1s infinite; 
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; 
+    }
+    p {
+        font-size: 1.2em; 
+    }
+    img {
+        width: 80%; 
+        max-width: 300px; 
+    }
+}
